@@ -44,6 +44,8 @@ Data will look like:
 
 ## Add a lesson
 
+Send key value pairs
+
 ## Remove a lesson
 
 ## Update a lesson
