@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
+const jwt = require('jsonwebtoken');
 const util = require('util');
 
 require('dotenv').config();
 
 const app = require('./config/express');
-const router = require('./controllers/thing.js');
+const router = require('./controllers/index.js');
 
 mongoose.Promise = Promise;
 
@@ -19,6 +20,27 @@ mongoose.connection.on('error', () => {
 });
 
 // # TODO: Any additional config changes belong here.
+
+// const checkAuth = (req, res, next) => {
+//     console.log("Checking Auth");
+//     if (typeof req.headers.jwttoken === "undefined" || req.headers.jwttoken === null) {
+//         req.user = null;
+//         next();
+//     } else {
+//         const token = req.headers.jwttoken;
+//         jwt.verify(token, process.env.JWT_SECRET, (err, decodedToken) => {
+//             if (err) {
+//                 console.log('Auth Error: Invalid signature')
+//                 req.user = null;
+//             } else {
+//                 req.user = decodedToken;
+//             }
+//             next();
+//         })
+//     }
+// };
+//
+// app.use(checkAuth);
 
 // Routes
 app.use(router);

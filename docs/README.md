@@ -30,17 +30,37 @@ Data will look like:
 [
     {
         id: 000001
-        course: Course Name
-        lesson: First Lesson
-        author: Author O'Lesson
-        content: summary of lesson
+        course_name: Course Name
+        lesson_name: First Lesson
+        course_author: Author O'Lesson
+        lesson_content: summary of lesson
         url: http://www.urlofwebsite.edu/mypage/lessonpage.html
+        _id: 'b2l43c9lukku1t9893410z'
 
     }
 ]
 ```
 
 ## Get a specific lesson by id
+
+Send a GET request to URL `localhost:3000/courses/ID_HERE`
+
+Data will look like:
+
+```json
+[
+    {
+        id: 000001
+        course_name: Course Name
+        lesson_name: First Lesson
+        course_author: Author O'Lesson
+        lesson_content: summary of lesson
+        lesson_url: http://www.urlofwebsite.edu/mypage/lessonpage.html
+        _id: 'b2l43c9lukku1t9893410z'
+
+    }
+]
+```
 
 ## Add a lesson
 
