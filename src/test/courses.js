@@ -85,22 +85,23 @@ it('should show all courses', (done) => {
     })
 })
 
-// it ('should show a specific course', (done) => {
-//     let course = new Course(sampleCourse);
-//     course.save().then((savedCourse) => {
-//         chai.request(app)
-//             .get('/course/${savedCourse._id}')
-//             .set('jwttoken', jwt.sign({ username: 'test_user'}, process.env.JWT_SECRET))
-//             .end((err,res) => {
-//                 if (err) return done(err);
-//
-//                 assert.equal(res.body.course_name, 'Course Name')
-//                 assert.equal(res.body.lesson_name, 'First Lesson')
-//                 assert.equal(res.body.course_author, "Author O'Course")
-//                 return done()
-//             })
-//     })
-// })
+// working on
+it ('should show a specific course', (done) => {
+    let course = new Course(sampleCourse);
+    course.save().then((savedCourse) => {
+        chai.request(app)
+            .get('/course/${savedCourse._id}')
+            .set('jwttoken', jwt.sign({ username: 'test_user'}, process.env.JWT_SECRET))
+            .end((err,res) => {
+                if (err) return done(err);
+
+                assert.equal(res.body.course_name, 'Course Name')
+                assert.equal(res.body.lesson_name, 'First Lesson')
+                assert.equal(res.body.course_author, "Author O'Course")
+                return done()
+            })
+    })
+})
 //
 // it('should POST a new course', (done) => {
 //     let course = new Course(sampleCourse)

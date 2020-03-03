@@ -3,11 +3,13 @@
 ## Description
 Allow websites to easily access publicly available instructional series
 
-> Rocking Witchling Learning
+> Rocking New Witch Learning
 
 ## Installation
 
 To install this API, clone the repo, open terminal, and run command in the directory into which you cloned.
+
+In the terminal window, navigate to the API's directory and type the following:
 
 ```bash
 npm install
@@ -22,7 +24,8 @@ npm start
 
 ## Get all available lessons
 
-Send a GET request to URL `localhost:3000/lessons` to get a list of all lessons. *(not yet functional)*
+Send a GET request to URL `localhost:3000/` to get a list of all lessons.
+*(sample data only)*
 
 Data will look like:
 
@@ -42,6 +45,8 @@ Data will look like:
 ```
 
 ## Get a specific lesson by id
+
+If you find a specific lesson you'd like to view or display on your own site via this API, make note of the sequence of numbers following *_id:*. Use that sequence of letters and numbers to replace the part of the URL that says *ID_HERE* in order to access the referenced lesson.
 
 Send a GET request to URL `localhost:3000/courses/ID_HERE`
 
