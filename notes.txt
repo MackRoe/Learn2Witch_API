@@ -4,11 +4,16 @@ https://www.toptal.com/nodejs/secure-rest-api-in-nodejs
 Question:
 How to use the sign-up route? √
 
-TODO: add checkAuth to critical routes
+TODO: add checkAuth to critical routes √
       write tests to make sure checkAuth is working
+      ask how to write documentation the endpoints
 
-Question:
+Questions:
+
     Received this message at last push to repo: 'GitHub found 8 vulnerabilities
     on MackRoe/Learn2Witch_API's default branch (1 critical, 3 high, 3 moderate,
     1 low).' --- What is causing this and how do I fix it?
-    
+
+    Can I fix it so the route that shows all courses does not contains some of
+    the fields in the model? I would like to make the content and url fields
+    proprietary.

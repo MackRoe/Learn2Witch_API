@@ -66,4 +66,25 @@ it('should be able to log in', (done) => {
   })
 })
 
+// ------ coding in progress -----
+// it('should not be able to delete without login', (done) => {
+//     let user = null
+//     user.save().then(notUser => {
+//         chai.request(app)
+//         .post('/auth/login')
+//         .delete(`/${savedCourse._id}`)
+//
+//         .end((err,res) => {
+//
+//
+//             Course.findOne({_id: course._id})
+//                 .then((deletedCourse) => {
+//                     assert.equal(deletedCourse._id, savedCourse._id)
+//                     return done()
+//                 } else {
+//                 if (err) return done(err)
+//             })
+// })
+//     })
+// })
 });
