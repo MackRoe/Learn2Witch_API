@@ -23,6 +23,9 @@ Then run:
 ```bash
 npm start
 ```
+
+If user is accessing this API from a publicly deployed source, a JWT secret is not needed. However, if user has cloned the API from github, user will need to generate their own JWT secret to use in the API.
+
 # How to Make Requests
 
 ## Get all available lessons
