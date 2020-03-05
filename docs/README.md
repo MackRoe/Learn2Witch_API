@@ -24,7 +24,7 @@ Then run:
 npm start
 ```
 
-If user is accessing this API from a publicly deployed source, a JWT secret is not needed. However, if user has cloned the API from github, user will need to generate their own JWT secret to use in the API.
+> If user is accessing this API from a publicly deployed source, a JWT secret is not needed. However, if user has cloned the API from github, user will need to generate their own JWT secret to use in the API.
 
 # How to Make Requests
 
@@ -110,3 +110,5 @@ Before you will be able to log in, you must sign up. Please see the Signing Up s
 Use postman to send a POST to the appended localhost port. The user must be logged in to use this feature. Append with `/auth/login`
 
 > API is in development. Refresh browser window to see most recent documentation.
+
+Link to [Postman](http://www.postman.com)
