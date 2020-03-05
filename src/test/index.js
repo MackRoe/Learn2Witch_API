@@ -24,7 +24,7 @@ after((done) => {
 describe('## Index', () => {
     it('should load homepage', function(done) {
     chai.request(app)
-        .get('/course/about')
+        .get('/about')
         .then(function(res){
             console.log(res.body);
             assert.equal(res.status, 200);

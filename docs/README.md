@@ -24,7 +24,7 @@ npm start
 
 ## Get all available lessons
 
-Send a GET request to URL `localhost:3000/` to get a list of all lessons.
+Send a GET request to URL `localhost:4040/` to get a list of all lessons.
 *(sample data only)*
 
 Data will look like:
@@ -43,12 +43,13 @@ Data will look like:
     }
 ]
 ```
+*(Note: Output above is an example only. The _id will not work to get course info)*
 
 ## Get a specific lesson by id
 
 If you find a specific lesson you'd like to view or display on your own site via this API, make note of the sequence of numbers following *_id:*. Use that sequence of letters and numbers to replace the part of the URL that says *ID_HERE* in order to access the referenced lesson.
 
-Send a GET request to URL `localhost:3000/courses/ID_HERE`
+Send a GET request to URL `localhost:4040/ID_HERE`
 
 Data will look like:
 
@@ -66,10 +67,11 @@ Data will look like:
     }
 ]
 ```
+*(Note: Output above is an example only. The _id will not work to get course info)*
 
 ## Add a lesson
 
-Send key value pairs
+In order to add a new lesson, you will need to send key value pairs like those displayed in the outputs above.
 
 ## Remove a lesson
 

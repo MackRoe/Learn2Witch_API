@@ -7,7 +7,7 @@ const UserSchema = new Schema({
     lastName: String,
     email: String,
     password: String,
-    permissionLevel: Number,
+    accessLevel: Number,
     createdAt: { type: Date },
     updatedAt: { type: Date },
     password: { type: String, select: false },

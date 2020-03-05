@@ -25,10 +25,16 @@ router.get('/:id', (req, res) => {
 
 // POST new course
 router.post('/', (req,res) => {
-    const course = new Course(req.body)
-    course.save().then(result => {
-        res.json(result)
-    })
+    console.log('-----')
+    console.log(req.user)
+    if (req.user == null){
+        res.json({message: 'must be logged in'})
+    } else {
+        const course = new Course(req.body)
+        course.save().then(result => {
+            res.json(result)
+        })
+    }
 })
 
 // PUT endpoint

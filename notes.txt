@@ -1,2 +1,10 @@
 reference:
 https://www.toptal.com/nodejs/secure-rest-api-in-nodejs
+
+Question:
+How to use the sign-up route? √
+
+TODO: add checkAuth to critical routes
+      write tests to make sure checkAuth is working
+
+      
