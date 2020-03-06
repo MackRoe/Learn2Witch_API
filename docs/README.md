@@ -6,9 +6,14 @@ Developed to allow websites to easily access available instructional materials f
 
 While designed to help further the religious and magickal education of those who are new to the practice of Witchcraft, Learn2Witch can be used as a back end for any educational website.
 
+This API will give your educational website or mobile app the power of a scalable back end database server built with easy to use Java Script.
+
 > Rocking New Witch Learning
+> Successfully deployed at [https://learn2witch.herokuapp.com](https://learn2witch.herokuapp.com)
 
 ## Installation
+
+To use this API, without installing, visit the link above.
 
 To install this API, clone the repo, open terminal, and run command in the directory into which you cloned.
 
@@ -75,7 +80,7 @@ Data will look like:
     }
 ]
 ```
-*(Note: Output above is an example only. The _id will not work to get course info)*
+*(Note: Output above is an example only. This _id will not work to get course info)*
 
 ## Add a lesson
 
@@ -84,6 +89,19 @@ Key value pairs like those displayed in the outputs above, are required.
 Mandatory key: course_name. Optional keys: lesson_name, course_author, lesson_content, lesson_url
 
 Use postman to send a POST to the localhost port. The user must be logged in to use this feature.
+
+User input should look like the following:
+```json
+[
+    {
+        course_name: "Name It"
+        lesson_name: "Name of Lesson"
+        course_author: "Your Name If"
+        lesson_content: "Written by You"
+        lesson_url: "http://server.com/yoursite/yourpage.html"
+    }
+]
+```
 
 ## Remove a lesson
 
@@ -97,18 +115,55 @@ The user must be logged in to use this feature. Please see the instructions in t
 
 Use postman to send a PUT to the localhost port. Specify the key corresponding to the value to be updated.
 
+User input should look like the following:
+```json
+[
+    {
+        _id:
+        course_name: "Named It"
+        lesson_name: "New name of Lesson"
+        course_author: "Other Name When"
+        lesson_content: "Written by Others"
+        lesson_url: "http://server.com/yoursite/yourpage.html"
+    }
+]
+```
+
 ## Signing Up
 
 Use postman to send a POST to the appended localhost port. The user must be logged in to use this feature. Append with `/auth/sign-up`. Key value pairs like those displayed in the outputs above, are required.
 Mandatory keys: username, password. Optional keys: firstName, lastName, email
+
+User input should look like:
+```json
+[
+    {
+        username: Matt Userson
+        password: anything
+        firstName: Matt
+        lastName: Userson
+        email: muserson@server.com
+
+    }
+]
+```
 
 
 ## Logging In
 
 Before you will be able to log in, you must sign up. Please see the Signing Up section.
 
-Use postman to send a POST to the appended localhost port. The user must be logged in to use this feature. Append with `/auth/login`
+Use postman to send a POST to URL `localhost:4040/auth/login`
 
-> API is in development. Refresh browser window to see most recent documentation.
+Input should look like:
+```json
+[
+    {
+        username: Matt Userson
+        password: anything
+    }
+]
+```
+____
 
 Link to [Postman](http://www.postman.com)

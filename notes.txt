@@ -11,11 +11,12 @@ TODO: add checkAuth to critical routes √
 Questions:
 
     Requirements say this project must be deployed? Is github enough or what
-    else do I need to do?
+    else do I need to do? *Deployed* √
 
     Received this message at last push to repo: 'GitHub found 8 vulnerabilities
     on MackRoe/Learn2Witch_API's default branch (1 critical, 3 high, 3 moderate,
     1 low).' --- What is causing this and how do I fix it?
+    *Not Important to Fix* √
 
     Can I fix it so the route that shows all courses does not contains some of
     the fields in the model? I would like to make the content and url fields
