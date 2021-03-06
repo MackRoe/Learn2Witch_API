@@ -21,3 +21,6 @@ Questions:
     Can I fix it so the route that shows all courses does not contains some of
     the fields in the model? I would like to make the content and url fields
     proprietary.
+
+Heroku Deployment Borked:
+[https://learn2witch.herokuapp.com](https://learn2witch.herokuapp.com)

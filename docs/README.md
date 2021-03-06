@@ -1,15 +1,13 @@
-# Learn2Witch API
+# Course Delivery API
 
 ## Description
 
 Developed to allow websites to easily access available instructional materials for the goal of making courses and lessons available through a back end web application API
 
-While designed to help further the religious and magickal education of those who are new to the practice of Witchcraft, Learn2Witch can be used as a back end for any educational website.
+CourseDelivery_API can be used as a back end for any educational website.
 
 This API will give your educational website or mobile app the power of a scalable back end database server built with easy to use Java Script.
 
-> Rocking New Witch Learning
-> Successfully deployed at [https://learn2witch.herokuapp.com](https://learn2witch.herokuapp.com)
 
 ## Installation
 
